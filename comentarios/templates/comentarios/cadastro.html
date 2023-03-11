@@ -1,0 +1,48 @@
+{% extends 'Layout.html' %}
+
+{% load static %}
+
+{% block 'title'%}Cadastro comentário{% endblock 'title' %}
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/comentarios/cadastro.css'%}">
+<link rel="stylesheet" href="{% static 'css/edicao.css'%}">
+
+{% endblock 'scripts' %}
+
+{% block 'content' %}
+
+<h1>Cadastro de comentários</h1>
+
+<form action="{% url 'comentarios/cadastro' %}" id="cadastro" method="post">
+    {% csrf_token %}
+    <div class="col-md">
+        <div class="input-label-flutuante grande">
+            <input type="text" id="resumo" name="resumo" required placeholder="Digite o tópico do seu comentário">
+            <label for="resumo">Tópico</label>
+        </div>
+    </div>
+
+    <div class="col-md">
+        <div class="input-label medio">
+            <label for="categoria">Categoria</label>
+            <select name="categoria">
+                <option value="1">Segurança</option>
+                <option value="2">Acessibilidade</option>
+                <option value="3">Saúde pública</option>
+                <option value="4">Outros</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-md">
+        <div class="input-label" style="max-width: 800px;">
+            <label for="categoria">Descrição</label>
+            <textarea class="summernote editavel" name="descricao"></textarea>
+        </div>
+    </div>
+    <div class="col-md acoes">
+        <button type="submit" form="cadastro" class="btn btn-success">Enviar</button>
+    </div>
+</form>
+
+{% endblock 'content' %}

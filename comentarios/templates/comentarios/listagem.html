@@ -1,0 +1,23 @@
+{% extends 'Layout.html' %}
+
+{% load static %}
+
+{% block 'title'%}Cadastro comentário{% endblock 'title' %}
+{% block 'scripts' %}
+
+<link rel="stylesheet" href="{% static 'css/comentarios/cadastro.css'%}">
+<link rel="stylesheet" href="{% static 'css/edicao.css'%}">
+
+{% endblock 'scripts' %}
+
+{% block 'content' %}
+
+<h1>Comentários</h1>
+
+<div class="listagem">
+    {% for value in List %}
+    <textarea class="summernote listagem" name="descricao">{{value.descricao}}</textarea>
+    {% endfor %}
+</div>
+
+{% endblock 'content' %}

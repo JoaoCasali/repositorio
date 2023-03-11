@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --main-color: #203AC3;
+    --dark-color: #0C1862;
+    --light-color: #93A0EE;
+    --contrast-color: rgb(230, 230, 230);
+    --contrast-color-opacity: rgba(255, 255, 255, 0.6);
+    --differencial-color: #6d80ef;
+    --danger-color: #dc3545;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--contrast-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--main-color);
+    margin: 0px;
+    margin-bottom: 30px;
+}
+
+a,
+a:hover {
+    color: var(--contrast-color);
+}
+
+.space {
+    flex: 1 1 100px;
+}
+
+.invisivel {
+    display: none;
+}
+
+.logo {
+    width: 64px;
+}
+
+.btn-primary {
+    background-color: var(--light-color);
+    color: var(--contrast-color);
+    border-color: var(--light-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--differencial-color) !important;
+    border-color: var(--differencial-color) !important;
+}
+
+.btn-primary:active {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+}
+
+.divisor {
+    background: white;
+    height: 100vh;
+    overflow-y: auto;
+    margin-left: 70px;
+    border-left: 4px solid var(--main-color);
+    box-shadow: -2px 10px 30px var(--light-color);
+    padding: 20px 30px;
+}
+
+.div-p {
+    width: 25%;
+}
+
+.div-m {
+    width: 50%;
+}
+
+.div-g {
+    width: 75%;
+}
+
+
+@media (max-width: 991px) {
+    .divisor {
+        margin-left: 0;
+        border-left: none;
+        padding: 10px 20px;
+    }
+
+    .div-p {
+        width: 90%;
+    }
+
+    .div-m {
+        width: 90%;
+    }
+
+    .div-g {
+        width: 90%;
+    }
+}
