@@ -37,6 +37,13 @@ $(document).ready(function () {
         }
     });
 
+    $('.cep').keypress(function (event) {
+        var tecla = event.which;
+        if (tecla != 45 && (tecla < 48 || tecla > 57)) {
+            event.preventDefault();
+        }
+    });
+
     // formatadores
     $('.decimal').blur(function () {
         if ($(this).val() == '') {
@@ -94,6 +101,48 @@ $(document).ready(function () {
         // });
 
     });
+
+    $(".cep").blur(function () {
+        var cep = $(this).val().replace(/\D/g, '');
+
+        if (cep != "") {
+            var validacep = /^[0-9]{8}$/;
+            if (validacep.test(cep)) {
+                $("#rua").val("...");
+                $("#bairro").val("...");
+                $("#cidade").val("...");
+                $("#uf").val("...");
+                $.getJSON("https://viacep.com.br/ws/" + cep + "/json/?callback=?", function (dados) {
+                    if (!("erro" in dados)) {
+                        $("#rua").val(dados.logradouro);
+                        $("#bairro").val(dados.bairro);
+                        $("#cidade").val(dados.localidade);
+                        $("#uf").val(dados.uf);
+                    }
+                    else {
+                        $("#rua").val("");
+                        $("#bairro").val("");
+                        $("#cidade").val("");
+                        $("#uf").val("");
+                        alert("CEP não encontrado.");
+                    }
+                });
+            }
+            else {
+                $("#rua").val("");
+                $("#bairro").val("");
+                $("#cidade").val("");
+                $("#uf").val("");
+                alert("Formato de CEP inválido.");
+            }
+        }
+        else {
+            $("#rua").val("");
+            $("#bairro").val("");
+            $("#cidade").val("");
+            $("#uf").val("");
+        }
+    });
 });
 
 function DefinirCampoComoObrigatorio(campo) {
@@ -104,9 +153,3 @@ function DefinirCampoComoOpcional(campo) {
     campo.removeAttr('required');
     campo.next('label').find('span').remove();
 }
-
-$(function () {
-    $('#imagem').change(function () {
-        $('.nome-arquivo').html($(this).val());
-    });
-});
