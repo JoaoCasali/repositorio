@@ -2,7 +2,7 @@
 
 
 <p>
-  <img src="" alt="Nossa logo" />
+  <img src="logo.jpeg" width="200px"/>
 </p>
 
 
