@@ -1,15 +1,18 @@
 header {
     display: flex;
-    background-color: var(--contrast-color);
-    border-bottom: 4px solid var(--main-color);
-    box-shadow: 0px 2px 30px var(--light-color);
     color: var(--main-color);
-    z-index: -2;
+    min-height: 80px;
+    padding: 0 10%;
+    width: 100vw;
+    background-color: var(--contrast-color);
 }
 
-header .logoContainer {
-    border-right: 4px solid var(--main-color);
-    padding: 3px;
+.navbar-collapse {
+    justify-content: right;
+}
+
+.navbar-toggler {
+    border-color: var(--dark-color);
 }
 
 .nav-link,
@@ -20,11 +23,20 @@ header .logoContainer {
 }
 
 .nav-link:hover {
-    color: var(--dark-color);
+    color: var(--light-color);
+    border-bottom: 1px solid var(--light-color);
 }
 
-.contexto p {
-    font-size: 1.2rem;
-    margin: 0 10px 0 0;
-    display: inline-block;
+.navbar-nav {
+    margin-right: 20px;
+}
+
+@media (max-width: 991px) {
+    header {
+        padding: 0;
+    }
+
+    .nav-link:hover {
+        border-bottom: none;
+    }
 }

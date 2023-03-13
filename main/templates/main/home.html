@@ -11,25 +11,14 @@
 
 {% block 'content' %}
 
-<div class="home">
-  <div class="fundo"></div>
-  <img src="{% static 'img/logo.png' %}" alt="logo java.py" class="imagem">
-  <span class="space"></span>
-  <div class="texto">
-    <h1>O jeito mais rápido de conectar o cidadão com a prefeitura.</h1>
-    <p>
-      Um canal de comunicação direto com a prefeitura, possibilitando mandar uma sugestão, reclamação ou elogio de forma
-      rápida e fácil.
-    </p>
-    <br>
-    <br>
-    <br>
-    {% if request.user.is_authenticated %}
-    <a href="{% url 'comentarios/listagem' %}" class="btn btn-primary botaoHome">Comentários</a>
-    {% else %}
-    <a href="{% url 'cadastro' %}" class="btn btn-primary botaoHome">Cadastrar-se</a>
-    {% endif %}
-  </div>
+<div class="conteudo">
+    <div class="secao">
+        <h2>O jeito mais rápido de conectar o cidadão com a prefeitura.</h2>
+        <p>Um canal de comunicação direto com a prefeitura, possibilitando mandar uma sugestão, reclamação ou elogio de
+            forma rápida e fácil.</p>
+        <a href="#" class="btn btn-primary">Cadastre-se</a>
+    </div>
+    <img src="{% static 'img/logo.png'%}" alt="Logo da java.py">
 </div>
 
 {% endblock 'content' %}
