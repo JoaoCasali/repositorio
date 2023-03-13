@@ -6,11 +6,7 @@
 </p>
 
 
-## Proposta
-
-Como o cidadão pode ajudar na zeladoria pública de sua cidade?
-
-## Objetivo do projeto
+## Como o cidadão pode ajudar na zeladoria pública de sua cidade?
 
 Um dos desafios enfrentados pelas prefeituras é garantir que os cidadãos possam participar de forma ativa e efetiva na zeladoria da cidade. Para solucionar esse problema e facilitar a comunicação entre a população e o poder público, foi desenvolvido um site que funciona como uma plataforma de sugestões, reclamações e elogios.
 
