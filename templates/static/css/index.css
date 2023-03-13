@@ -24,6 +24,18 @@ body {
     flex-direction: column;
 }
 
+/* barra de rolagem */
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: var(--contrast-color);
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+}
+
 h1,
 h2,
 h3,
@@ -51,19 +63,35 @@ a:hover {
 }
 
 .btn-primary {
-    background-color: var(--light-color);
-    color: var(--contrast-color);
-    border-color: var(--light-color);
+    background-color: var(--main-color);
+    color: white;
+    border-color: var(--main-color);
 }
 
 .btn-primary:hover {
-    background-color: var(--differencial-color) !important;
-    border-color: var(--differencial-color) !important;
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
 }
 
 .btn-primary:active {
     background-color: var(--dark-color) !important;
     border-color: var(--dark-color) !important;
+}
+
+.btn-secondary {
+    background-color: var(--light-color);
+    color: white;
+    border-color: var(--light-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--differencial-color) !important;
+    border-color: var(--differencial-color) !important;
+}
+
+.btn-secondary:active {
+    background-color: var(--differencial-color) !important;
+    border-color: var(--differencial-color) !important;
 }
 
 .divisor {
@@ -74,6 +102,7 @@ a:hover {
     border-left: 4px solid var(--main-color);
     box-shadow: -2px 10px 30px var(--light-color);
     padding: 20px 30px;
+    z-index: -1;
 }
 
 .div-p {

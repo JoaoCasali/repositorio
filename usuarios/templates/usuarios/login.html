@@ -15,8 +15,8 @@
 
 <div class="conteudo div-p">
     <div class="titulo">
-        <img src="{% static 'img/logoComContorno.png' %}" class="logo" alt="Logo emerald" style="margin-right: 10px;">
-        <h2>Emerald</h2>
+        <img src="{% static 'img/logo.png' %}" class="logo" alt="Logo emerald" style="margin-right: 10px;">
+        <h2>Java.<span>Py</span></h2>
     </div>
     <form action="{% url 'login' %}" method="POST" id="login">{% csrf_token %}
         <div class="col-md">
@@ -32,8 +32,8 @@
             </div>
         </div>
         <div class="col-md acoes">
-            <button type="submit" form="login" class="btn btn-success">Entrar</button>
-            <a href="{% url 'cadastro' %}" class="btn btn-primary">Cadastrar-se</a>
+            <button type="submit" form="login" class="btn btn-primary">Entrar</button>
+            <a href="{% url 'cadastro' %}" class="btn btn-success">Cadastrar-se</a>
         </div>
     </form>
 </div>

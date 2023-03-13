@@ -23,13 +23,13 @@
             <img src="{% static 'img/Usuário sem foto.png'%}" alt="Usuário sem foto">
             <div class="dados">
                 <p class="nomeUsuario">{{value.cidadao.first_name}}</p>
-                <p class="cidadeUsuario">Blumenau</p>
+                <p class="cidadeUsuario">{{value.cidade}}, {{value.bairro}}</p>
             </div>
             <span class="space"></span>
             <div class="resumo">{{value.resumo}}</div>
         </div>
         <div class="conteudo invisivel">
-            <textarea class="summernote listagem" name="descricao">{{value.descricao}}</textarea>
+            <textarea class="summernote listagem">{{value.descricao}}</textarea>
         </div>
     </div>
     {% endfor %}

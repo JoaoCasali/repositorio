@@ -14,7 +14,16 @@ body {
 .titulo {
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+.titulo h2 {
+    margin: 0;
+}
+
+.titulo h2 span {
+    margin: 0;
+    color: var(--dark-color);
 }
 
 .conteudo form {

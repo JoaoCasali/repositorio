@@ -11,10 +11,28 @@ def Cadastro(request):
     resumo = request.POST.get('resumo')
     categoria = int(request.POST.get('categoria'))
     descricao = request.POST.get('descricao')
+    cep = request.POST.get('cep')
+    uf = request.POST.get('uf')
+    cidade = request.POST.get('cidade')
+    bairro = request.POST.get('bairro')
+    rua = request.POST.get('rua')
+    complemento = request.POST.get('complemento')
 
-    usuario = request.user
+    cepLimpo = [str(digit) for digit in cep if digit.isdigit()]
 
-    comentario = Comentario(resumo = resumo, descricao = descricao, topico= categoria, cidadao= usuario)
+    cepLimpo = ''.join(cepLimpo)
+
+    comentario = Comentario(
+        resumo = resumo, 
+        descricao = descricao, 
+        topico= categoria, 
+        cidadao= request.user,
+        uf= uf,
+        bairro= bairro,
+        rua= rua,
+        complemento= complemento,
+        cidade= cidade,
+        )
 
     comentario.save()
 

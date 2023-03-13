@@ -14,8 +14,11 @@ $(document).ready(function () {
     });
 
     $('.summernote.listagem').summernote({
+        disableDragAndDrop: true,
         airMode: true
     });
+
+    $('.summernote.listagem').summernote('disable');
 
     // verificação de caracteres válidos
     $('.decimal').keypress(function (event) {

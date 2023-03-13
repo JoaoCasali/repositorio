@@ -14,6 +14,16 @@ def Cadastro(request):
     cpf_cnpj = request.POST.get('cpf_cnpj')
     email = request.POST.get('email')
     senha = request.POST.get('senha')
+    cep = request.POST.get('cep')
+    uf = request.POST.get('uf')
+    cidade = request.POST.get('cidade')
+    bairro = request.POST.get('bairro')
+    rua = request.POST.get('rua')
+    complemento = request.POST.get('complemento')
+
+    cepLimpo = [str(digit) for digit in cep if digit.isdigit()]
+
+    cepLimpo = ''.join(cepLimpo)
 
     user = Cidadao.objects.filter(Q(cpf_cnpj=email) | Q(email=email)).first()
     if user:

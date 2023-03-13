@@ -8,7 +8,7 @@
 
 <header>
     <div class="logoContainer">
-        <img src="{% static 'img/logoComContorno.png' %}" class="logo" alt="Logo emerald">
+        <img src="{% static 'img/logo.png' %}" class="logo" alt="Logo emerald">
     </div>
     <nav class="navbar navbar-expand-lg" style="width: 100%;">
         <div class="container-fluid">
@@ -22,6 +22,9 @@
                         <a class="nav-link" href="{% url 'home' %}">Página inicial</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="{% url 'comentarios/listagem' %}">Comentários</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="{% url 'manual' %}">Manual</a>
                     </li>
                 </ul>
@@ -30,8 +33,8 @@
                     {% if request.user.is_authenticated %}
 
                     <p>Seja bem-vindo, {{ request.user.first_name}}</p>
+                    <a href="{% url 'comentarios/cadastro' %}" class="btn btn-primary">Comentar</a>
                     <a href="{% url 'logout' %}" class="btn btn-danger">Sair</a>
-
                     {% else %}
 
                     <a href="{% url 'login' %}" class="btn btn-success">Entrar</a>

@@ -21,6 +21,8 @@
     transition: opacity 0.5s ease;
     height: 400px;
     overflow-y: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .listagem .info {
@@ -43,14 +45,21 @@
 .listagem .info .nomeUsuario {
     font-weight: 700;
     font-size: 1.5rem;
+    margin-bottom: 0;
 }
 
 .listagem .info .cidadeUsuario {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
 .listagem .info .resumo {
     display: flex;
     align-items: center;
     font-size: 1.3rem;
+}
+
+.note-editable {
+    align-items: center;
+    text-align: center;
+    color: var(--contrast-color);
 }
