@@ -40,7 +40,7 @@ $ pip install -r requirements.txt
 ```
 - Migrations:
 ```bash
-$ python manage.py makemgrations
+$ python manage.py makemigrations
 ```
 ```bash
 $ python manage.py migrate
