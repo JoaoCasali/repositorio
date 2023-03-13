@@ -70,7 +70,7 @@ $ python manage.py runserver
 | Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        |
 
 ## Tecnologias utilizadas
-[![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,docker,mysql,git)](https://skills.thijs.gg)
+[![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,docker,mysql,git,figma)](https://skills.thijs.gg)
 
 ## Licença
 
