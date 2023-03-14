@@ -3,7 +3,7 @@ header {
     color: var(--main-color);
     min-height: 80px;
     padding: 0 10%;
-    width: 100vw;
+    width: 100%;
     background-color: var(--contrast-color);
 }
 
