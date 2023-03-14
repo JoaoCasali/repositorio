@@ -2,7 +2,7 @@
 
 
 <p>
-  <img src="logo.jpeg" width="200px"/>
+  <img src="logobanner.jpeg" width=900px/>
 </p>
 
 
@@ -12,14 +12,13 @@ Um dos desafios enfrentados pelas prefeituras é garantir que os cidadãos possa
 
 O objetivo principal do site é oferecer aos cidadãos um canal direto de comunicação com a prefeitura, permitindo que possam expressar suas opiniões sobre a qualidade dos serviços oferecidos e das condições dos espaços públicos. Ao permitir que os cidadãos possam fazer suas sugestões, reclamações e elogios de forma rápida e fácil, o site se torna uma ferramenta valiosa para o poder público, pois permite que os gestores possam identificar os problemas que afetam a cidade e, assim, trabalhar para resolvê-los de forma mais eficiente.
 
-O site foi projetado para ser um canal de comunicação seguro e eficiente entre a prefeitura e os cidadãos, permitindo que as sugestões, reclamações e elogios sejam registrados de forma clara e identificável.
-
 Além disso, o site também oferece ferramentas que permitem que a prefeitura possa gerenciar as informações recebidas, de forma a identificar os problemas mais recorrentes e, assim, priorizar as ações que devem ser tomadas. Ao permitir que os usuários se identifiquem ao fazer suas sugestões, reclamações e elogios, a prefeitura pode estabelecer um diálogo mais transparente e direto com a população, o que é fundamental para a construção de uma cidade mais participativa.
+
 Em resumo, o site é uma ferramenta valiosa para conectar os cidadãos com a prefeitura e ajudar a melhorar a qualidade dos serviços oferecidos e das condições dos espaços públicos. Com sua interface intuitiva e funcionalidades avançadas, o site se torna uma plataforma de participação cidadã que pode ser acessada de forma rápida e fácil, contribuindo para um ambiente mais seguro, saudável e agradável para todos os cidadãos.
 
 
 ## Protótipo
-<a href="https://www.figma.com/file/KJx9h6AVgJvr1x4J7j613n/luiza-bissoni's-team-library?node-id=537%3A36&t=2bLavk7wJ4WcgBW6-1">Clique aqui</a> para acessar o protótipo.
+<a href="'''https://www.figma.com/file/KJx9h6AVgJvr1x4J7j613n/luiza-bissoni's-team-library?node-id=537%3A36&t=2bLavk7wJ4WcgBW6-1'''">Clique aqui</a> para acessar o protótipo.
 
 ## Demonstração da Aplicação
 
@@ -60,14 +59,14 @@ $ python manage.py runserver
 ## ✒️ Equipe
 
 
-| Alunos                              | Função                      |  Github                                       | 
-| ----------------------------------- | --------------------------- | --------------------------------------------- |
-| David                               | Back-end                    |  [Github](https://github.com/davidsimas)       |
-| Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    |
-| Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     |
-| João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   |
-| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) |
-| Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        |
+| Alunos                              | Função                      |  Github                                       | Linkedin      |
+| ----------------------------------- | --------------------------- | --------------------------------------------- |-------------|
+| David                               | Back-end                    |  [Github](https://github.com/davidsimas)       | [Linkedin](https://www.linkedin.com/in/david-simas81/)
+| Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    | [Linkedin](https://www.linkedin.com/in/evertonds/)
+| Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     | [Linkedin](https://www.linkedin.com/in/guilhermewamser/)
+| João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   | [Linkedin](https://www.linkedin.com/in/joao-vitor-casali/)
+| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) | [Linkedin](https://www.linkedin.com/in/larissahsebold/)
+| Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        | [Linkedin](https://www.linkedin.com/in/luizabissoni/)
 
 ## Tecnologias utilizadas
 [![My Skills](https://skills.thijs.gg/icons?i=python,js,html,css,django,docker,mysql,git,figma)](https://skills.thijs.gg)

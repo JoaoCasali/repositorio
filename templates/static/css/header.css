@@ -5,6 +5,7 @@ header {
     padding: 0 10%;
     width: 100%;
     background-color: var(--contrast-color);
+    margin-bottom: 20px;
 }
 
 .navbar-collapse {

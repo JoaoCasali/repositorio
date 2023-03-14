@@ -13,11 +13,8 @@
 
 {% block 'layout' %}
 
-<div class="conteudo div-p">
-    <div class="titulo">
-        <img src="{% static 'img/logo.png' %}" class="logo" alt="Logo emerald" style="margin-right: 10px;">
-        <h2>Java.<span>Py</span></h2>
-    </div>
+<div class="login div-p">
+    <h2>Entrar</h2>
     <form action="{% url 'login' %}" method="POST" id="login">{% csrf_token %}
         <div class="col-md">
             <div class="input-label-flutuante medio">
