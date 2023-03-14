@@ -66,7 +66,7 @@ $ python manage.py runserver
 | Everton                             | Back-end                   | [Github](https://github.com/EvertonDenega)    |
 | Guilherme                           | Front-end          | [Github](https://github.com/guiwamser)     |
 | João                                | Arquiteto de software     | [Github](https://github.com/JoaoCasali)   |
-| Larissa                          | Gerente de projetos                    | [Github](https://github.com/lsebold) |
+| Larissa                          | Gerente de projetos e Front-end                   | [Github](https://github.com/lsebold) |
 | Luiza                              |  UX/UI e Front-end                   | [Github](https://github.com/LuizaBissoni)        |
 
 ## Tecnologias utilizadas
